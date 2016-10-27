@@ -1,3 +1,19 @@
+Description:
+
 This application determines the type of a triangle. It should
 take the lengths of the triangle's three sides as input, and return whether
 the triangle is equilateral, isosceles or scalene.
+
+Requirements:
+
+Java SE 8.
+
+To run the project:
+
+1. Download from Github in some home folder (name it e.g. trianglesAnalysis).
+2. Compile the project in the project folder in command line using command:
+javac -d bin -sourcepath src -cp .;libs/* src/my/trianglesAnalysis/*.java test/trianglesAnalysis/*.java
+3. To run the program launch a command in the following format from the project folder:
+java -cp bin;libs/* my.trianglesAnalysis.TrianglesAnalysis 2 3 5
+4. To run tests launch a command from the project folder:
+java -cp bin;libs/* org.junit.runner.JUnitCore trianglesAnalysis.TrianglesAnalysisTest
