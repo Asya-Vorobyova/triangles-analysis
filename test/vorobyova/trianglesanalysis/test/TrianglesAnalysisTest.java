@@ -1,20 +1,21 @@
 /**
  * 
  */
-package trianglesAnalysis;
+package vorobyova.trianglesanalysis.test;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import my.trianglesAnalysis.TrianglesAnalysis;
-import my.trianglesAnalysis.TrianglesAnalysis.NoTriangleException;
+import vorobyova.trianglesanalysis.NoTriangleException;
+import vorobyova.trianglesanalysis.TrianglesAnalysis;
+
 
 /**
  * @author Asya
  *
- * Test for {@link my.trianglesAnalysis.TrianglesAnalysis} class
+ * Test for {@link vorobyova.trianglesanalysis.TrianglesAnalysis} class
  */
 public class TrianglesAnalysisTest {
 
@@ -26,7 +27,7 @@ public class TrianglesAnalysisTest {
     }
     
     /**
-     * Test method for {@link my.trianglesAnalysis.TrianglesAnalysis#solveTriangle(java.lang.Double[])}.
+     * Test method for {@link vorobyova.trianglesanalysis.TrianglesAnalysis#solveTriangle(java.lang.Double[])}.
      * Checks that sides number are incorrect.
      */
     @Test
@@ -41,7 +42,7 @@ public class TrianglesAnalysisTest {
     }
 
     /**
-     * Test method for {@link my.trianglesAnalysis.TrianglesAnalysis#solveTriangle(java.lang.Double[])}.
+     * Test method for {@link vorobyova.trianglesanalysis.TrianglesAnalysis#solveTriangle(java.lang.Double[])}.
      * Checks that some side isn't positive.
      */
     @Test
@@ -56,7 +57,7 @@ public class TrianglesAnalysisTest {
     }
 
     /**
-     * Test method for {@link my.trianglesAnalysis.TrianglesAnalysis#solveTriangle(java.lang.Double[])}.
+     * Test method for {@link vorobyova.trianglesanalysis.TrianglesAnalysis#solveTriangle(java.lang.Double[])}.
      * Checks that some side isn't greater than a sum of two others.
      */
     @Test
@@ -71,7 +72,7 @@ public class TrianglesAnalysisTest {
     }
 
     /**
-     * Test method for {@link my.trianglesAnalysis.TrianglesAnalysis#solveTriangle(java.lang.Double[])}.
+     * Test method for {@link vorobyova.trianglesanalysis.TrianglesAnalysis#solveTriangle(java.lang.Double[])}.
      * Checks the case of equilateral triangle.
      */
     @Test
@@ -85,7 +86,7 @@ public class TrianglesAnalysisTest {
     }
 
     /**
-     * Test method for {@link my.trianglesAnalysis.TrianglesAnalysis#solveTriangle(java.lang.Double[])}.
+     * Test method for {@link vorobyova.trianglesanalysis.TrianglesAnalysis#solveTriangle(java.lang.Double[])}.
      * Checks the case of isosceles triangle.
      */
     @Test
@@ -99,7 +100,7 @@ public class TrianglesAnalysisTest {
     }
 
     /**
-     * Test method for {@link my.trianglesAnalysis.TrianglesAnalysis#solveTriangle(java.lang.Double[])}.
+     * Test method for {@link vorobyova.trianglesanalysis.TrianglesAnalysis#solveTriangle(java.lang.Double[])}.
      * Checks the case of scalene triangle.
      */
     @Test
@@ -111,5 +112,5 @@ public class TrianglesAnalysisTest {
             fail("NoTriangleException was occured");
         }
     }
-
+    
 }
