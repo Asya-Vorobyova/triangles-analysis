@@ -12,11 +12,6 @@ public class NoTriangleException extends Exception {
 
     private double[] badSides;
     
-//    public NoTriangleException(EBadTriangle code, Double[] badSides) {
-//        this.code = code;
-//        this.badSides = badSides;
-//    }
-
     public NoTriangleException(EBadTriangle code, double[] badSides) {
         this.code = code;
         this.badSides = badSides;
