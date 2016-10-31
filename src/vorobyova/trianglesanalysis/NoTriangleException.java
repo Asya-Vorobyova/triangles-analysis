@@ -10,9 +10,14 @@ import java.util.Arrays;
 public class NoTriangleException extends Exception {
     private EBadTriangle code;
 
-    private Double[] badSides;
+    private double[] badSides;
     
-    public NoTriangleException(EBadTriangle code, Double[] badSides) {
+//    public NoTriangleException(EBadTriangle code, Double[] badSides) {
+//        this.code = code;
+//        this.badSides = badSides;
+//    }
+
+    public NoTriangleException(EBadTriangle code, double[] badSides) {
         this.code = code;
         this.badSides = badSides;
     }

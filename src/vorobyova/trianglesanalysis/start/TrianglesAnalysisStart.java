@@ -20,7 +20,7 @@ public class TrianglesAnalysisStart {
      */
     public static void main(String[] args) {
         try {
-            Double[] sides = Arrays.stream(args).map(arg -> Double.parseDouble(arg)).toArray(Double[]::new);
+            double[] sides = Arrays.stream(args).mapToDouble(arg -> Double.parseDouble(arg)).toArray();
             TrianglesAnalysis analysis = new TrianglesAnalysis();
             System.out.println("A triangle is exists and " + analysis.solveTriangle(sides).name().toLowerCase()); 
         } catch (NumberFormatException e) {

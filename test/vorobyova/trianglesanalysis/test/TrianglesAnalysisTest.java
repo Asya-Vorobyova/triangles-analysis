@@ -32,7 +32,7 @@ public class TrianglesAnalysisTest {
      */
     @Test
     public void testSidesNumberFail() {
-        Double[] sides = new Double[]{ 1d, 2d, 3d, 4d };
+        double[] sides = new double[]{ 1d, 2d, 3d, 4d };
         try {
             analysis.solveTriangle(sides);
             fail("NoTriangleException was not occured!");
@@ -47,7 +47,7 @@ public class TrianglesAnalysisTest {
      */
     @Test
     public void testSidesNotPositiveFail() {
-        Double[] sides = new Double[]{ -1d, 2d, 3d };
+        double[] sides = new double[]{ -1d, 2d, 3d };
         try {
             analysis.solveTriangle(sides);
             fail("NoTriangleException was not occured!");
@@ -62,7 +62,7 @@ public class TrianglesAnalysisTest {
      */
     @Test
     public void testTriangleRuleFail() {
-        Double[] sides = new Double[]{ 1d, 2d, 4d };
+        double[] sides = new double[]{ 1d, 2d, 4d };
         try {
             analysis.solveTriangle(sides);
             fail("NoTriangleException was not occured!");
@@ -77,7 +77,7 @@ public class TrianglesAnalysisTest {
      */
     @Test
     public void testEquilateralTriangle() {
-        Double[] sides = new Double[]{ 1d, 1d, 1d };
+        double[] sides = new double[]{ 1d, 1d, 1d };
         try {
             assertEquals(analysis.solveTriangle(sides).name(), "EQUILATERAL");
         } catch (NoTriangleException e) {
@@ -91,7 +91,7 @@ public class TrianglesAnalysisTest {
      */
     @Test
     public void testIsoscelesTriangle() {
-        Double[] sides = new Double[]{ 1d, 1d, 0.5d };
+        double[] sides = new double[]{ 1d, 1d, 0.5d };
         try {
             assertEquals(analysis.solveTriangle(sides).name(), "ISOSCELES");
         } catch (NoTriangleException e) {
@@ -105,7 +105,7 @@ public class TrianglesAnalysisTest {
      */
     @Test
     public void testScaleneTriangle() {
-        Double[] sides = new Double[]{ 3d, 4d, 5d };
+        double[] sides = new double[]{ 3d, 4d, 5d };
         try {
             assertEquals(analysis.solveTriangle(sides).name(), "SCALENE");
         } catch (NoTriangleException e) {
